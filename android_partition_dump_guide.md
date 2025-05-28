@@ -67,11 +67,11 @@ dd if=/dev/block/dm-1 of=/storage/emulated/0/Download/dm-1.img bs=4M
 ```bash
 dd if=/dev/block/persist of=/storage/emulated/0/Download/persist.img bs=4M
 ```
-# 5/11 - Modem firmware
+# 5/11 - Modem partition
 ```bash
 dd if=/dev/block/modem of=/storage/emulated/0/Download/modem.img bs=4M
 ```
-# 6/11 - Bluetooth firmware
+# 6/11 - Bluetooth partition
 ```bash
 dd if=/dev/block/bluetooth of=/storage/emulated/0/Download/bluetooth.img bs=4M
 ```
@@ -98,7 +98,7 @@ dd if=/dev/block/vendor of=/storage/emulated/0/Download/vendor.img bs=4M
 
 ### Копирование образов на компьютер
 
-Выполните команды **в терминале компьютера** (выйдите из adb shell):
+Выполните команды **в терминале компьютера** (выйдите из adb shell или откройте новое окно):
 
 ```bash
 adb pull /storage/emulated/0/Download/system.img ./
