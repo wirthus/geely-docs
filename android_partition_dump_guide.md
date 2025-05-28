@@ -53,47 +53,47 @@
 
 # 1/11 - System partition
 ```bash
-dd if=/dev/block/system of=/storage/emulated/0/Downloads/system.img bs=4M status=progress
+dd if=/dev/block/system of=/storage/emulated/0/Downloads/system.img bs=4M
 ```
 # 2/11 - DM-0
 ```bash
-dd if=/dev/block/dm-0 of=/storage/emulated/0/Downloads/dm-0.img bs=4M status=progress
+dd if=/dev/block/dm-0 of=/storage/emulated/0/Downloads/dm-0.img bs=4M
 ```
 # 3/11 - DM-1
 ```bash
-dd if=/dev/block/dm-1 of=/storage/emulated/0/Downloads/dm-1.img bs=4M status=progress
+dd if=/dev/block/dm-1 of=/storage/emulated/0/Downloads/dm-1.img bs=4M
 ```
 # 4/11 - Persist partition
 ```bash
-dd if=/dev/block/persist of=/storage/emulated/0/Downloads/persist.img bs=1M status=progress
+dd if=/dev/block/persist of=/storage/emulated/0/Downloads/persist.img bs=1M
 ```
 # 5/11 - Modem firmware
 ```bash
-dd if=/dev/block/modem of=/storage/emulated/0/Downloads/modem.img bs=1M status=progress
+dd if=/dev/block/modem of=/storage/emulated/0/Downloads/modem.img bs=1M
 ```
 # 6/11 - Bluetooth firmware
 ```bash
-dd if=/dev/block/bluetooth of=/storage/emulated/0/Downloads/bluetooth.img bs=512K status=progress
+dd if=/dev/block/bluetooth of=/storage/emulated/0/Downloads/bluetooth.img bs=512K
 ```
 # 7/11 - VDL partition
 ```bash
-dd if=/dev/block/vdl of=/storage/emulated/0/Downloads/vdl.img bs=1M status=progress
+dd if=/dev/block/vdl of=/storage/emulated/0/Downloads/vdl.img bs=1M
 ```
 # 8/11 - VDK partition
 ```bash
-dd if=/dev/block/vdk of=/storage/emulated/0/Downloads/vdk.img bs=1M status=progress
+dd if=/dev/block/vdk of=/storage/emulated/0/Downloads/vdk.img bs=1M
 ```
 # 9/11 - VDI partition
 ```bash
-dd if=/dev/block/vdi of=/storage/emulated/0/Downloads/vdi.img bs=1M status=progress
+dd if=/dev/block/vdi of=/storage/emulated/0/Downloads/vdi.img bs=1M
 ```
 # 10/11 - VDJ partition
 ```bash
-dd if=/dev/block/vdj of=/storage/emulated/0/Downloads/vdj.img bs=1M status=progress
+dd if=/dev/block/vdj of=/storage/emulated/0/Downloads/vdj.img bs=1M
 ```
 # 11/11 - Vendor partition
 ```bash
-dd if=/dev/block/vendor of=/storage/emulated/0/Downloads/vendor.img bs=4M status=progress
+dd if=/dev/block/vendor of=/storage/emulated/0/Downloads/vendor.img bs=4M
 ```
 
 ### Копирование образов на компьютер
