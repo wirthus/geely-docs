@@ -18,7 +18,7 @@ set "WHITE="
 set "RESET="
 
 :: Конфигурация
-set "DEVICE_PATH=/storage/emulated/0/Downloads"
+set "DEVICE_PATH=/storage/emulated/0/Download"
 set "LOG_FILE=partition_backup_%date:~-4,4%%date:~-10,2%%date:~-7,2%_%time:~0,2%%time:~3,2%%time:~6,2%.log"
 set "LOG_FILE=%LOG_FILE: =0%"
 
@@ -190,8 +190,8 @@ set "source_path=/dev/block/%partition_name%"
 set "target_file=%DEVICE_PATH%/%partition_name%.img"
 set "block_size=4M"
 
-if "%DEBUG_MODE%"=="1" echo adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size% status=progress'"
-adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size% status=progress'" 2>nul
+if "%DEBUG_MODE%"=="1" echo adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size%'"
+adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size%'" 2>nul
 if errorlevel 1 exit /b 1
 exit /b 0
 
