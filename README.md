@@ -24,7 +24,7 @@
 
 ### Шаг 2: Подключение через Telnet
 
-#### Для Windows 11:
+#### Для Windows:
 Действия для Windows 10 и 11 схожи, но могут незначительно отличаться в зависимости от настроек системы.
 1. **На ноутбуке**: откройте Командную строку (cmd), PowerShell или Terminal
 2. Выполните команду:
@@ -91,4 +91,4 @@ setprop persist.service.adb.button.visible ON
 ## Благодарности
 - [@ser_s77](https://t.me/ser_s77) за обнаружение открытого Telnet-порта
 - [@guiver67](https://t.me/guiver67), [@DimasRulev](https://t.me/DimasRulev) за помощь и передачу накопленного опыта с других машин
-- [@KOTvZephire](https://t.me/KOTvZephire) за дополнения по Windows 10 и Ubuntu 22.
+- [@KOTvZephire](https://t.me/KOTvZephire) за дополнения по Windows 10 и Linux.
