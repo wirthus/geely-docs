@@ -81,8 +81,8 @@ goto MAIN_MENU
 echo %BLUE%Запуск автоматического режима...%RESET%
 echo [%date% %time%] Starting automatic mode >> "%LOG_FILE%"
 
-call :CHECK_ROOT_ACCESS
-if errorlevel 1 goto MAIN_MENU
+@REM call :CHECK_ROOT_ACCESS
+@REM if errorlevel 1 goto MAIN_MENU
 
 set "partition_index=0"
 for %%p in (%PARTITIONS%) do (
@@ -99,8 +99,8 @@ goto MAIN_MENU
 echo %BLUE%Интерактивный режим выбора разделов%RESET%
 echo [%date% %time%] Starting interactive mode >> "%LOG_FILE%"
 
-call :CHECK_ROOT_ACCESS
-if errorlevel 1 goto MAIN_MENU
+@REM call :CHECK_ROOT_ACCESS
+@REM if errorlevel 1 goto MAIN_MENU
 
 echo Доступные разделы:
 set "partition_index=0"
