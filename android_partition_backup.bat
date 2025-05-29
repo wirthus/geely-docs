@@ -190,8 +190,8 @@ set "source_path=/dev/block/%partition_name%"
 set "target_file=%DEVICE_PATH%/%partition_name%.img"
 set "block_size=4M"
 
-if "%DEBUG_MODE%"=="1" echo adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size%'"
-adb shell "su -c 'dd if=%source_path% of=%target_file% bs=%block_size%'" 2>nul
+if "%DEBUG_MODE%"=="1" echo adb shell "su 0 dd if=%source_path% of=%target_file% bs=%block_size%"
+adb shell "su 0 dd if=%source_path% of=%target_file% bs=%block_size%" 2>nul
 if errorlevel 1 exit /b 1
 exit /b 0
 
